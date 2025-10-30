@@ -1,0 +1,18 @@
+.lx-button {
+  padding: 8px 16px;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.lx-button:hover:not(:disabled) {
+  border-color: #409eff;
+  color: #409eff;
+}
+
+.lx-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

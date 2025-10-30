@@ -1,0 +1,28 @@
+{
+  "name": "lx",
+  "version": "1.0.0",
+  "description": "Vue 3 组件库 Monorepo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test"
+  },
+  "keywords": [
+    "vue3",
+    "component",
+    "library",
+    "monorepo"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12",
+    "vue": "^3.5.22",
+    "vue-tsc": "^3.1.2"
+  }
+}
