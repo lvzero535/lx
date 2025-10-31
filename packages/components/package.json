@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Vue 3 组件库",
   "type": "module",
-  "main": "dist/components.umd.cjs",
-  "module": "dist/components.js",
-  "types": "dist/index.d.ts",
+  "main": "index.ts",
+  "module": "index.ts",
   "files": ["dist"],
   "scripts": {
     "dev": "vite",

@@ -5,9 +5,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "pnpm -r dev",
+    "dev": "pnpm --filter playground dev",
     "build": "pnpm -r build",
-    "test": "pnpm -r test"
+    "test": "pnpm -r test",
+    "pack:packages": "node scripts/build-packages.js",
+    "build:packages": "tsx scripts/build-packages.ts",
+    "build:pkg": "tsx scripts/build-packages.ts --pkg",
+    "build:component": "tsx scripts/build-packages.ts --component"
   },
   "keywords": [
     "vue3",
@@ -20,9 +24,14 @@
   "devDependencies": {
     "@types/node": "^24.9.2",
     "@vitejs/plugin-vue": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "vite": "^7.1.12",
     "vue": "^3.5.22",
     "vue-tsc": "^3.1.2"
+  },
+  "dependencies": {
+    "less": "^4.4.2"
   }
 }
